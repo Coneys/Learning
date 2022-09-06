@@ -1,4 +1,4 @@
-package patterns.structural.builder
+package patterns.creational.builder
 
 fun main() {
     val customer = CustomerAssembler("Jan", 20).apply {

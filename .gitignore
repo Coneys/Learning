@@ -1,0 +1,11 @@
+.idea/
+.gradle/
+**/build
+gradlew.bat
+**/.kotlintest
+build/*
+/build/
+out/
+docs/
+js/
+kotlin-js-store

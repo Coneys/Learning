@@ -1,4 +1,4 @@
-package patterns.structural.realBuilder
+package patterns.creational.realBuilder
 
 enum class CPU {
     radeon4900, i3, i7, i9

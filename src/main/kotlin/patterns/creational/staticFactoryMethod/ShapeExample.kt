@@ -1,4 +1,4 @@
-package patterns.structural.staticFactoryMethod
+package patterns.creational.staticFactoryMethod
 
 
 sealed class Shape {
@@ -6,6 +6,7 @@ sealed class Shape {
     data class Rectangle internal constructor(val a: Int, val b: Int) : Shape()
 
     companion object {
+
         fun from(text: String): Shape {
             val shapeCode = text.first().lowercase()
             return when (shapeCode) {

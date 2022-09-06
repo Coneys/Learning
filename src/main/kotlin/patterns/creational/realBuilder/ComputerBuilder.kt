@@ -1,4 +1,4 @@
-package patterns.structural.realBuilder
+package patterns.creational.realBuilder
 
 interface ComputerBuilder {
     fun setCPU(cpu: CPU)

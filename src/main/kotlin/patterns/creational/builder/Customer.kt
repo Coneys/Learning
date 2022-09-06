@@ -1,4 +1,4 @@
-package patterns.structural.builder
+package patterns.creational.builder
 
 data class Customer(
     val name: String,

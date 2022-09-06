@@ -1,4 +1,4 @@
-package patterns.structural.realBuilder
+package patterns.creational.realBuilder
 
 /*Describes how to create object. Director class hides steps, while builders hides implementation details*/
 

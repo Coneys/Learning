@@ -1,4 +1,4 @@
-package patterns.structural.singleton
+package patterns.creational.singleton
 
 
 object UnknownCategory {

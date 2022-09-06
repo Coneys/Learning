@@ -1,4 +1,4 @@
-package patterns.structural.realBuilder
+package patterns.creational.realBuilder
 
 class ComputerBuildingDirector {
     fun makeHighEndPC(builder: ComputerBuilder) {
