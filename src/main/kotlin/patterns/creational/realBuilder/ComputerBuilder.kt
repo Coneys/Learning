@@ -26,7 +26,7 @@ class RealComputerBuilder : ComputerBuilder {
     fun getResult() = Computer(cpu, gpu, coolingSystem)
 }
 
-class ComputerManualBuilder() : ComputerBuilder {
+class ManualComputerBuilder() : ComputerBuilder {
     private var cpuDescription: String = ""
     private var gpuDescription: String = ""
     private var coolingSystemDescription: String = ""

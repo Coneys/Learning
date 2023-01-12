@@ -10,7 +10,3 @@
 + Niewidoczna dla klienta zmiana implementacji
 
 ![image info](../../../../resources/MapboxFactory.png)
-
-
-
-

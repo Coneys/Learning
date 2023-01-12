@@ -1,9 +1,9 @@
 package patterns.creational.staticFactoryMethod
 
 
-sealed class Shape {
-    data class Circle internal constructor(val radius: Int) : Shape()
-    data class Rectangle internal constructor(val a: Int, val b: Int) : Shape()
+abstract class Shape {
+    data class Circle constructor(val radius: Int) : Shape()
+    data class Rectangle constructor(val a: Int, val b: Int) : Shape()
 
     companion object {
 
@@ -15,6 +15,7 @@ sealed class Shape {
                     val (a, b) = text.drop(1).split(",")
                     Rectangle(a.toInt(), b.toInt())
                 }
+
                 else -> error("Unknown shape $shapeCode")
             }
         }
@@ -24,9 +25,11 @@ sealed class Shape {
 }
 
 fun main() {
+
     val circle = Shape.from("c5")
     val rectangle = Shape.from("r4,2")
     val incorrect = Shape.fromOrNull("k4")
+
 
     println("Circle $circle")
     println("Rectangle $rectangle")

@@ -1,4 +1,4 @@
-package patterns.creational.builder
+package patterns.creational.assembler
 
 data class Customer(
     val name: String,
@@ -6,7 +6,10 @@ data class Customer(
     val city: String?,
     val occupation: String?,
     val creditScore: Int?
-)
+) {
+    companion object
+}
+
 
 class CustomerAssembler(val name: String, val age: Int) {
     var city = ""

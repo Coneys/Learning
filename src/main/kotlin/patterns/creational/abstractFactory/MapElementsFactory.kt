@@ -22,7 +22,7 @@ fun main() {
     val secondPoint = LatLng(50.0, 20.0)
 
 
-    val factory = MapElementsFactory.mapbox()
+    val factory = MapElementsFactory.google()
 
     val marker = factory.createMarker(point)
     val polyline = factory.createPolyline(listOf(point, secondPoint))

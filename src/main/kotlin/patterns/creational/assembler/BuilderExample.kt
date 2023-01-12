@@ -1,11 +1,17 @@
-package patterns.creational.builder
+package patterns.creational.assembler
 
 fun main() {
-    val customer = CustomerAssembler("Jan", 20).apply {
-        creditScore = 20
-        occupation = "unknown"
-        city = "Krakow"
-    }.assembly()
+
+        val customerAssembler = CustomerAssembler("Jan", 20)
+
+        val customer = customerAssembler.apply {
+            creditScore = 20
+            occupation = "unknown"
+            city = "Krakow"
+        }.assembly()
+
+
+
 
     println("Immutable customer created by assembler $customer")
 
