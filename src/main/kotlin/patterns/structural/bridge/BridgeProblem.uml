@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/coney/Amistad/Backend/learning/src/main/kotlin/patterns/structural/bridge/inRealCode/MessWithoutBridge.kt</OriginalElement>
+  <nodes>
+    <node x="207.5" y="64.0">patterns.structural.bridge.inRealCode.StandardUserPayUPaymentProcess</node>
+    <node x="-188.5" y="64.0">patterns.structural.bridge.inRealCode.StandardUserPrzelewy24PaymentProcess</node>
+    <node x="-219.0" y="142.0">patterns.structural.bridge.inRealCode.StandardUserPrzelewy24ExpressPaymentProcess</node>
+    <node x="855.5" y="64.0">patterns.structural.bridge.inRealCode.VipUserPrzelewy24PaymentProcess</node>
+    <node x="505.0" y="-79.14028056112227">patterns.structural.bridge.inRealCode.Payment</node>
+    <node x="327.0" y="-79.14028056112227">patterns.structural.bridge.inRealCode.Addressee</node>
+    <node x="554.5" y="64.0">patterns.structural.bridge.inRealCode.VipUserPayUPaymentProcess</node>
+    <node x="443.0" y="-14.0">patterns.structural.bridge.inRealCode.PaymentProcess</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="patterns.structural.bridge.inRealCode.StandardUserPayUPaymentProcess" target="patterns.structural.bridge.inRealCode.PaymentProcess" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="371.0" y="39.0" />
+      <point x="533.0" y="39.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="patterns.structural.bridge.inRealCode.VipUserPayUPaymentProcess" target="patterns.structural.bridge.inRealCode.PaymentProcess" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="695.0" y="39.0" />
+      <point x="533.0" y="39.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="patterns.structural.bridge.inRealCode.StandardUserPrzelewy24ExpressPaymentProcess" target="patterns.structural.bridge.inRealCode.StandardUserPrzelewy24PaymentProcess" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="patterns.structural.bridge.inRealCode.StandardUserPrzelewy24PaymentProcess" target="patterns.structural.bridge.inRealCode.PaymentProcess" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="-0.5" y="39.0" />
+      <point x="533.0" y="39.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="patterns.structural.bridge.inRealCode.VipUserPrzelewy24PaymentProcess" target="patterns.structural.bridge.inRealCode.PaymentProcess" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="1021.0" y="39.0" />
+      <point x="533.0" y="39.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.699859747545582" showDependencies="false" x="484.0" y="115.21442885771546" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
