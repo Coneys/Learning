@@ -1,6 +1,6 @@
 package patterns.structural.bridge.inRealCode
 
-interface PaymentValidation {
+fun interface PaymentValidation {
     fun validate(payment: Payment): Boolean
 }
 

@@ -2,13 +2,9 @@ package patterns.structural.composite
 
 import patterns.structural.bridge.inRealCode.*
 
-class PaymentAndValidation(val first: PaymentValidation, val second: PaymentValidation) : PaymentValidation {
-    override fun validate(payment: Payment): Boolean {
-        return first.validate(payment) and second.validate(payment)
-    }
+infix fun PaymentValidation.and(other: PaymentValidation): PaymentValidation {
+    return PaymentValidation { payment -> validate(payment) && other.validate(payment) }
 }
-
-infix fun PaymentValidation.and(other: PaymentValidation) = PaymentAndValidation(this, other)
 
 fun onlySmallAmounts() = SmallPaymentValidation()
 fun onlyToGermany() = GermanyOnlyPaymentValidation()
