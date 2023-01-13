@@ -42,14 +42,16 @@ class Przelewy24ExpressExecution : PaymentExecution {
 }
 
 
-class PaymentProcess2(val validation: PaymentValidation, val execution: PaymentExecution)
+class PaymentProcess(private val validation: PaymentValidation, private val execution: PaymentExecution) {
+    fun validate(payment: Payment) = validation.validate(payment)
+}
 
 fun main() {
 
-    val payuStandardProcess = PaymentProcess2(StandardUserValidation(), PayuExecution())
-    val payuVipProcess = PaymentProcess2(VipUserValidation(), PayuExecution())
-    val przelewy24StandardProcess = PaymentProcess2(StandardUserValidation(), Przelewy24Execution())
-    val przelewy24ExpressStandardProcess = PaymentProcess2(StandardUserValidation(), Przelewy24ExpressExecution())
+    val payuStandardProcess = PaymentProcess(StandardUserValidation(), PayuExecution())
+    val payuVipProcess = PaymentProcess(VipUserValidation(), PayuExecution())
+    val przelewy24StandardProcess = PaymentProcess(StandardUserValidation(), Przelewy24Execution())
+    val przelewy24ExpressStandardProcess = PaymentProcess(StandardUserValidation(), Przelewy24ExpressExecution())
 
 
 }

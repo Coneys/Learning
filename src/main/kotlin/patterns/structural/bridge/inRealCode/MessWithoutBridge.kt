@@ -3,14 +3,13 @@ package patterns.structural.bridge.inRealCode
 class Addressee(val name: String, val country: String)
 class Payment(val amount: Int, val to: Addressee)
 
-interface PaymentProcess {
+interface ExamplePaymentProcess {
     fun validate(payment: Payment): Boolean
     fun execute(payment: Payment): Boolean
 }
 
 
-
-class StandardUserPayUPaymentProcess() : PaymentProcess {
+class StandardUserPayUPaymentProcess() : ExamplePaymentProcess {
     override fun validate(payment: Payment): Boolean {
         return payment.amount < 1000 && payment.to.country == "Poland"
     }
@@ -21,7 +20,7 @@ class StandardUserPayUPaymentProcess() : PaymentProcess {
     }
 }
 
-open class StandardUserPrzelewy24PaymentProcess() : PaymentProcess {
+open class StandardUserPrzelewy24PaymentProcess() : ExamplePaymentProcess {
     override fun validate(payment: Payment): Boolean {
         return payment.amount < 1000 && payment.to.country == "Poland"
     }
@@ -40,7 +39,7 @@ class StandardUserPrzelewy24ExpressPaymentProcess(): StandardUserPrzelewy24Payme
 }
 
 
-class VipUserPayUPaymentProcess : PaymentProcess {
+class VipUserPayUPaymentProcess : ExamplePaymentProcess {
     override fun validate(payment: Payment): Boolean {
         return payment.to.country != "Russia"
     }
@@ -51,7 +50,7 @@ class VipUserPayUPaymentProcess : PaymentProcess {
     }
 }
 
-class VipUserPrzelewy24PaymentProcess : PaymentProcess {
+class VipUserPrzelewy24PaymentProcess : ExamplePaymentProcess {
     override fun validate(payment: Payment): Boolean {
         return payment.to.country != "Russia"
     }
