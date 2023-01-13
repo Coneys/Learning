@@ -18,13 +18,13 @@ Wzorzec Brdige przydaje się w przypadku źle zaprojektowanych struktur dziedzic
 Przede wszystkim w przypadku tak zwanej eksplozji kombinatorycznej, czyli sytuacji, w której
 dodatkowa jedna funkcjonalność biznesowa wymaga stworzenia kilku lub nawet kilkunastu dodatkowych klas
 
-### Gwiezdne wojny
+#### Gwiezdne wojny
 
 [Pokaz problemu](bridge%2FinRealLife%2FMessWithoutBridge.kt)
 
 [Pokaz rozwiązania](bridge%2FinRealLife%2FBridgeImplementation.kt)
 
-### Prawdziwy kod
+#### Prawdziwy kod
 
 [Pokaz problemu](bridge%2FinRealCode%2FMessWithoutBridge.kt)
 
@@ -35,3 +35,10 @@ dodatkowa jedna funkcjonalność biznesowa wymaga stworzenia kilku lub nawet kil
 [Diagram rozwiązania](bridge%2FBridgeResult.uml)
 
 ## Composite
+
+[Composite dla ulepszenia walidacji z poprzedniego kroku](composite%2FPaymentCompositeValidation.kt)
+
+[Zaawansowane opcje komponowania](composite%2FPaymentComplexCompositeValidation.kt)
+
+[DSL ze wzorca Composite](composite%2FCompositeToDSL.kt)
+
