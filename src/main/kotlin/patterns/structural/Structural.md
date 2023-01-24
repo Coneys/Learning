@@ -14,7 +14,7 @@ kodu legacy, często nazywa się ten wzorzec ACL czyli Anti corrupion layer
 
 ## Bridge
 
-Wzorzec Brdige przydaje się w przypadku źle zaprojektowanych struktur dziedziczenia.
+Wzorzec Bridge przydaje się w przypadku źle zaprojektowanych struktur dziedziczenia.
 Przede wszystkim w przypadku tak zwanej eksplozji kombinatorycznej, czyli sytuacji, w której
 dodatkowa jedna funkcjonalność biznesowa wymaga stworzenia kilku lub nawet kilkunastu dodatkowych klas
 
@@ -44,3 +44,8 @@ dodatkowa jedna funkcjonalność biznesowa wymaga stworzenia kilku lub nawet kil
 
 [DSL ze wzorca Composite](composite%2FCompositeToDSL.kt)
 
+## Facade
+
+Fasady używamy by za prostym i intuicyjnym interfejsem ukryć skomplikowany proces
+
+[Przykład wypłaty pieniędzy z banku](facade%2FBankAccount.kt)
