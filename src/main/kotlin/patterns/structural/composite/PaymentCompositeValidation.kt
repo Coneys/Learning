@@ -21,11 +21,11 @@ class ValidAmountValidation : PaymentValidation {
     }
 }
 
-class CompositeValidation(private val Validations: List<PaymentValidation>) : PaymentValidation {
+class CompositeValidation(private val validations: List<PaymentValidation>) : PaymentValidation {
     constructor(vararg Validations: PaymentValidation) : this(Validations.toList())
 
     override fun validate(payment: Payment): Boolean {
-        return Validations.all { it.validate(payment) }
+        return validations.all { it.validate(payment) }
     }
 }
 

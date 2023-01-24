@@ -36,6 +36,8 @@ dodatkowa jedna funkcjonalność biznesowa wymaga stworzenia kilku lub nawet kil
 
 ## Composite
 
+[Przykład z widokami](composite%2Freal%2FRealLifeComposite.kt)
+
 [Composite dla ulepszenia walidacji z poprzedniego kroku](composite%2FPaymentCompositeValidation.kt)
 
 [Zaawansowane opcje komponowania](composite%2FPaymentComplexCompositeValidation.kt)
