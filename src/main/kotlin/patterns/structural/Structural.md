@@ -6,6 +6,12 @@ Używamy do dodawania nowych funkcjonalności do już istniejących klas, bez zm
 
 [Rozwiązanie przy użyciu wzorca](decorator%2FDecoratorSolution.kt)
 
+## Proxy
+
+Używamy do modyfikowania, blokowania lub rozszerzania funkcjonalności już istniejących klas, bez zmiany ich kodu
+
+[Przykład wykorzystania](proxy%2FProxyExample.kt)
+
 ## Adapter
 
 Adapter przydaje się wtedy, gdy chcemy dostosować kod jednej części systemu, do drugiej. Przykładowo w momencie,
@@ -52,7 +58,6 @@ Fasady używamy by za prostym i intuicyjnym interfejsem ukryć skomplikowany pro
 
 [Przykład wypłaty pieniędzy z banku](facade%2FBankAccount.kt)
 
-## Proxy
 
 ## Flyweight
 
