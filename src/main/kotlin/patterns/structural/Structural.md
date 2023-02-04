@@ -1,5 +1,7 @@
 ## Decorator
 
+Używamy do dodawania nowych funkcjonalności do już istniejących klas, bez zmiany ich kodu
+
 [Problem kompozycji funkcjonalności](decorator%2FDecoratorProblem.kt)
 
 [Rozwiązanie przy użyciu wzorca](decorator%2FDecoratorSolution.kt)
@@ -49,3 +51,13 @@ dodatkowa jedna funkcjonalność biznesowa wymaga stworzenia kilku lub nawet kil
 Fasady używamy by za prostym i intuicyjnym interfejsem ukryć skomplikowany proces
 
 [Przykład wypłaty pieniędzy z banku](facade%2FBankAccount.kt)
+
+## Proxy
+
+## Flyweight
+
+Wzorzec pozwalający na reużywanie zasobów, by oszczędzać zasoby pamięci.
+
+[Przykład problemu bez wzorca](flyweight%2FnoPattern.kt)
+
+[Rozwiązanie problemu przy użyciu Flyweight](flyweight%2Fflyweight.kt)
